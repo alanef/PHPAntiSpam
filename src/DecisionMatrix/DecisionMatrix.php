@@ -11,8 +11,12 @@ abstract class DecisionMatrix implements DecisionMatrixInterface
 
     /** @var  \PHPAntiSpam\Corpus\CorpusInterface */
     protected $corpus;
+	/**
+	 * @var mixed|null
+	 */
+	private $window;
 
-    public function __construct(array $words, CorpusInterface $corpus, $window = null)
+	public function __construct(array $words, CorpusInterface $corpus, $window = null)
     {
         $this->words = $words;
         $this->corpus = $corpus;
