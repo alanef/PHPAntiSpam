@@ -20,7 +20,11 @@ abstract class Math
             $denominator *= 1 - $lexeme['probability'];
         }
 
-        $result = $numerator / ($numerator + $denominator);
+	    if ($numerator + $denominator != 0) {
+		    $result = $numerator / ($numerator + $denominator);
+	    } else {
+			$result = 0;
+	    }
 
         return $result;
     }
