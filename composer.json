@@ -1,6 +1,6 @@
 {
-  "name": "bgruszka/phpantispam",
-  "description": "Bayesian spam recognition library",
+  "name": "alanef/phpantispam",
+  "description": "Bayesian spam recognition library, fork",
   "type": "library",
   "keywords": ["spam", "antispam", "bayes", "bayesian", "statistical analysis"],
   "license": "MIT",
