@@ -14,7 +14,7 @@ abstract class DecisionMatrix implements DecisionMatrixInterface
 	/**
 	 * @var mixed|null
 	 */
-	private $window;
+	protected $window;
 
 	public function __construct(array $words, CorpusInterface $corpus, $window = null)
     {
